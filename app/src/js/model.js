@@ -114,7 +114,6 @@ init();
 const clearBookmarks = function () {
   localStorage.clear(`bookmarks`);
 };
-// clearBookmarks();
 
 // TAKING OUR FORM UPLOADED RECIPES AND PUSHING THEM TO AN ARRAY IN ORDER TO CREATE A NEW RECIPE
 export const uploadRecipe = async function (formData) {
