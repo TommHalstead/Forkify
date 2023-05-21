@@ -13,10 +13,6 @@ import { async } from 'regenerator-runtime';
 
 ///////////////////////////////////////
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 // ASYNC FUNCTION TO FIND AND LOAD THE RECIPE BASED ON THE ID AND RENDER IT TO THE DOM
 const controlRecipes = async function () {
   try {
