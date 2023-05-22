@@ -43,26 +43,3 @@ export const makeObject = async function (recipeName) {
     key: `${!recipeName.key ? `` : recipeName.key}`,
   };
 };
-
-// export const sendJSON = async function (url, convertedFormData) {
-//   try {
-//     const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]);
-//     const data = await res.json();
-//     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-//     return data;
-//   } catch (err) {
-//     throw err;
-//   }
-// };
-
-// export const getJSON = async function (url) {
-//   try {
-//     const res = await Promise.race([fetch(url), timeout(TIMEOUT_SEC)]);
-//     const data = await res.json();
-
-//     if (!res.ok) throw new Error(`${data.message} (${res.status})`); // This throws an error that will propegate to the nearest catch block.
-//     return data; // We return data from this function, which will be the resolved promise of this API call.
-//   } catch (err) {
-//     throw err; // This will now re-throw this error, and will be handled by the next nearest catch block within environment where this function is called.
-//   }
-// };
